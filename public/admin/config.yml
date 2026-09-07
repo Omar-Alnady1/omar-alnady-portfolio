@@ -1,0 +1,172 @@
+backend:
+  name: github
+  repo: Omar-Alnady1/omar-alnady-portfolio
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: api/auth
+
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://omar-alnady1.github.io/omar-alnady-portfolio/
+display_url: https://omar-alnady1.github.io/omar-alnady-portfolio/
+
+collections:
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    create: true
+    slug: '{{slug}}'
+    format: json
+    extension: json
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Client, name: client, widget: string, required: false }
+      - { label: Year, name: year, widget: number, value_type: int, required: false }
+      - { label: Short Description, name: shortDescription, widget: text }
+      - { label: Role, name: role, widget: string, required: false }
+      - { label: Categories, name: categories, widget: list, field: { label: Category, name: category, widget: string } }
+      - { label: Disciplines, name: disciplines, widget: list, field: { label: Discipline, name: discipline, widget: string } }
+      - { label: Services, name: services, widget: list, required: false, field: { label: Service, name: service, widget: string } }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Display Order, name: displayOrder, widget: number, value_type: int, required: false }
+      - label: Thumbnail
+        name: thumbnail
+        widget: object
+        fields:
+          - { label: Image, name: src, widget: image }
+          - { label: Alt Text, name: alt, widget: string }
+          - { label: Aspect, name: aspect, widget: select, required: false, options: [landscape, portrait, square, wide] }
+      - label: Hero Media
+        name: heroMedia
+        widget: object
+        required: false
+        fields:
+          - { label: Image, name: src, widget: image }
+          - { label: Alt Text, name: alt, widget: string }
+          - { label: Aspect, name: aspect, widget: select, required: false, options: [landscape, portrait, square, wide] }
+      - label: Gallery
+        name: gallery
+        widget: list
+        required: false
+        field:
+          label: Media
+          name: media
+          widget: object
+          fields:
+            - { label: Image, name: src, widget: image }
+            - { label: Alt Text, name: alt, widget: string }
+            - { label: Aspect, name: aspect, widget: select, required: false, options: [landscape, portrait, square, wide] }
+            - { label: Caption, name: caption, widget: string, required: false }
+      - label: Videos
+        name: videos
+        widget: list
+        required: false
+        field:
+          label: Video
+          name: video
+          widget: object
+          fields:
+            - { label: Video URL, name: src, widget: string }
+            - { label: Poster, name: poster, widget: image, required: false }
+            - { label: Alt Text, name: alt, widget: string }
+            - { label: Caption, name: caption, widget: string, required: false }
+      - label: Content / Posts / Reels
+        name: contentLinks
+        widget: list
+        required: false
+        summary: '{{fields.type}} — {{fields.title}}'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Platform, name: platform, widget: string }
+          - { label: Type, name: type, widget: select, options: [Post, Reel, Story, Campaign, Video, Article, Other] }
+          - { label: URL, name: url, widget: string }
+          - { label: Thumbnail, name: thumbnail, widget: image, required: false }
+      - label: Case Study Sections
+        name: sections
+        widget: list
+        required: false
+        types:
+          - label: Text
+            name: text
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, required: false }
+              - { label: Body, name: body, widget: text }
+          - label: Intro
+            name: intro
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, required: false }
+              - { label: Body, name: body, widget: text }
+          - label: Challenge
+            name: challenge
+            widget: object
+            fields:
+              - { label: Body, name: body, widget: text }
+          - label: Approach
+            name: approach
+            widget: object
+            fields:
+              - { label: Body, name: body, widget: text }
+          - label: Execution
+            name: execution
+            widget: object
+            fields:
+              - { label: Body, name: body, widget: text }
+          - label: Outcome
+            name: outcome
+            widget: object
+            fields:
+              - { label: Body, name: body, widget: text }
+          - label: Quote
+            name: quote
+            widget: object
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Attribution, name: attribution, widget: string, required: false }
+          - label: Image
+            name: image
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt Text, name: alt, widget: string }
+              - { label: Aspect, name: aspect, widget: select, required: false, options: [landscape, portrait, square, wide] }
+          - label: Image Grid
+            name: imageGrid
+            widget: object
+            fields:
+              - label: Images
+                name: media
+                widget: list
+                field:
+                  label: Image
+                  name: image
+                  widget: object
+                  fields:
+                    - { label: Image, name: src, widget: image }
+                    - { label: Alt Text, name: alt, widget: string }
+                    - { label: Aspect, name: aspect, widget: select, required: false, options: [landscape, portrait, square, wide] }
+          - label: Stats
+            name: stats
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, required: false }
+              - label: Stats
+                name: stats
+                widget: list
+                fields:
+                  - { label: Value, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+          - label: Credits
+            name: credits
+            widget: object
+            fields:
+              - label: Credits
+                name: credits
+                widget: list
+                fields:
+                  - { label: Role, name: role, widget: string }
+                  - { label: Name, name: name, widget: string }
