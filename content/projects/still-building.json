@@ -1,0 +1,19 @@
+{
+  "id": "still-building",
+  "title": "Still Building",
+  "client": "SIMONE · قصاب",
+  "year": 2026,
+  "shortDescription": "Strategic brand storytelling, creative direction, space planning, ongoing content, and launch preparation.",
+  "role": "Creative Direction · Brand Storytelling · Content · Space Planning",
+  "categories": ["Food & Beverage", "Interior Design & Decoration"],
+  "disciplines": ["Brand Strategy", "Creative Direction", "Content", "Spatial Experience"],
+  "services": ["Brand Storytelling", "Creative Direction", "Space Planning", "Content", "Launch Preparation"],
+  "featured": false,
+  "displayOrder": 2,
+  "thumbnail": {"src": "/uploads/still-building.jpg", "alt": "Still Building", "aspect": "landscape"},
+  "heroMedia": {"src": "/uploads/still-building-hero.jpg", "alt": "Still Building", "aspect": "wide"},
+  "gallery": [],
+  "videos": [],
+  "contentLinks": [],
+  "sections": [{"type":"intro","heading":"Still Building","body":"SIMONE and قصاب are ongoing projects involving strategic brand storytelling, creative direction, on-ground space planning, continued content development, and launch preparation."}]
+}
