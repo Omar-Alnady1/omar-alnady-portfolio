@@ -1,0 +1,15 @@
+{
+  "title": "TROUMA",
+  "client": "TROUMA",
+  "year": 2025,
+  "categories": ["Food & Beverage", "Entertainment & Immersive Experience"],
+  "disciplines": ["Brand Strategy", "Creative Direction", "Experience Design", "Content Direction"],
+  "shortDescription": "",
+  "role": "Creative Director",
+  "services": ["Brand Strategy", "Brand Development", "Creative Direction", "Content", "Experience Design"],
+  "featured": true,
+  "displayOrder": 1,
+  "thumbnail": {"src": "/placeholders/ph-square-01.svg", "alt": "TROUMA"},
+  "contentLinks": [],
+  "sections": []
+}
