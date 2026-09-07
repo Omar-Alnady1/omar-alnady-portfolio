@@ -1,0 +1,24 @@
+{
+  "id": "trouma",
+  "title": "TROUMA",
+  "client": "TROUMA",
+  "year": 2025,
+  "shortDescription": "A full-scale entertainment concept built across storytelling, game mechanics, branding, marketing, and immersive experience.",
+  "role": "Creative Direction · Brand Strategy · Content · Experience",
+  "categories": ["Entertainment & Immersive Experience", "Food & Beverage"],
+  "disciplines": ["Brand Strategy", "Creative Direction", "Content", "Experience Design"],
+  "services": ["Market Research", "Positioning", "Brand Development", "Content Roadmap", "Storytelling", "Game Design", "Campaigns", "On-ground Execution"],
+  "featured": true,
+  "displayOrder": 1,
+  "thumbnail": {"src": "/uploads/trouma-thumbnail.jpg", "alt": "TROUMA", "aspect": "landscape"},
+  "heroMedia": {"src": "/uploads/trouma-hero.jpg", "alt": "TROUMA", "aspect": "wide"},
+  "gallery": [],
+  "videos": [],
+  "contentLinks": [],
+  "sections": [
+    {"type": "intro", "heading": "Built Across Every Layer", "body": "TROUMA was developed as a complete entertainment experience, connecting brand presence, story world, real experience, and game design into one system."},
+    {"type": "challenge", "body": "The challenge was to build an entertainment concept that could work as a brand, a story, a physical experience, and a playable system at the same time."},
+    {"type": "approach", "body": "The work started with market research, positioning, and action planning, then expanded into the master story, room narratives, gameplay puzzles, identity, visual direction, digital platforms, launch content, and experience flow."},
+    {"type": "execution", "body": "Led content and reels, advertising campaigns, player materials, digital launch platforms, and on-ground execution across the complete experience."}
+  ]
+}
