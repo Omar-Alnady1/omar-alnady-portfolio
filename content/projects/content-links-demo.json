@@ -1,0 +1,21 @@
+{
+  "id": "content-links-demo",
+  "title": "Content Links Demo",
+  "client": "CMS Demo",
+  "year": 2026,
+  "shortDescription": "Internal demo project proving that a project can contain an arbitrary number of content links.",
+  "role": "Creative Direction",
+  "categories": ["Marketing"],
+  "disciplines": ["Content"],
+  "services": ["Content Strategy"],
+  "featured": false,
+  "displayOrder": 99,
+  "thumbnail": {"src": "/uploads/demo.jpg", "alt": "Content Links Demo", "aspect": "landscape"},
+  "gallery": [],
+  "videos": [],
+  "contentLinks": [
+    {"title":"Example Post","platform":"Instagram","type":"Post","url":"https://instagram.com/"},
+    {"title":"Example Reel","platform":"Instagram","type":"Reel","url":"https://instagram.com/"}
+  ],
+  "sections": []
+}
