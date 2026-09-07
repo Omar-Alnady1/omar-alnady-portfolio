@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 900" width="2200" height="900">
+  <defs>
+    <filter id="grain-97">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+  <rect width="2200" height="900" fill="#17140F"/>
+  <line x1="150" y1="0" x2="150" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="300" y1="0" x2="300" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="450" y1="0" x2="450" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="600" y1="0" x2="600" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="750" y1="0" x2="750" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="900" y1="0" x2="900" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1050" y1="0" x2="1050" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1200" y1="0" x2="1200" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1350" y1="0" x2="1350" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1500" y1="0" x2="1500" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1650" y1="0" x2="1650" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1800" y1="0" x2="1800" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1950" y1="0" x2="1950" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="2100" y1="0" x2="2100" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <circle cx="1312" cy="545" r="198" fill="#B2694A" opacity="0.11"/>
+  <circle cx="1740" cy="727" r="189" fill="#E7DFD3" opacity="0.11"/>
+  <rect x="1120" y="113" width="208" height="208" fill="#B2694A" opacity="0.15" transform="rotate(-0.6 1225 218)"/>
+  <line x1="1646" y1="738" x2="1819" y2="842" stroke="#8C9A7B" stroke-width="1.5" opacity="0.18"/>
+  <line x1="878" y1="286" x2="1089" y2="413" stroke="#E7DFD3" stroke-width="1.5" opacity="0.18"/>
+  <rect width="2200" height="900" filter="url(#grain-97)"/>
+  <text x="50%" y="50%" font-family="Archivo, sans-serif" font-size="41" fill="#E7DFD3" fill-opacity="0.22" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">WIDE</text>
+</svg>

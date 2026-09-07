@@ -1,0 +1,12 @@
+.work-hero {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-6);
+}
+
+.work-hero__title {
+  max-width: 24ch;
+}
+
+.work-count {
+  margin-bottom: var(--space-5);
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <filter id="grain-101">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#17140F"/>
+  <line x1="150" y1="0" x2="150" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="300" y1="0" x2="300" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="450" y1="0" x2="450" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="600" y1="0" x2="600" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="750" y1="0" x2="750" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="900" y1="0" x2="900" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1050" y1="0" x2="1050" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1200" y1="0" x2="1200" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1350" y1="0" x2="1350" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1500" y1="0" x2="1500" y2="900" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <circle cx="730" cy="352" r="278" fill="#B2694A" opacity="0.15"/>
+  <line x1="1150" y1="128" x2="1358" y2="253" stroke="#E7DFD3" stroke-width="1.5" opacity="0.18"/>
+  <circle cx="527" cy="601" r="428" fill="#8C9A7B" opacity="0.08"/>
+  <rect width="1600" height="900" filter="url(#grain-101)"/>
+  <text x="50%" y="50%" font-family="Archivo, sans-serif" font-size="41" fill="#E7DFD3" fill-opacity="0.22" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">VIDEO</text>
+</svg>

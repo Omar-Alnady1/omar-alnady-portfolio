@@ -1,0 +1,79 @@
+/* Design tokens — the single source of truth for color, type, spacing, motion. */
+:root {
+  /* Color */
+  --color-bg: #14120f;
+  --color-bg-raised: #1a1712;
+  --color-bg-inset: #100e0b;
+  --color-hairline: rgba(231, 223, 211, 0.12);
+  --color-hairline-strong: rgba(231, 223, 211, 0.24);
+  --color-text: #e7dfd3;
+  --color-text-dim: rgba(231, 223, 211, 0.62);
+  --color-text-faint: rgba(231, 223, 211, 0.38);
+  --color-accent: #b2694a;
+  --color-accent-soft: rgba(178, 105, 74, 0.16);
+  --color-accent-2: #8c9a7b;
+  --color-focus: #d9c9a3;
+
+  /* Typography */
+  --font-display: 'Fraunces', 'Iowan Old Style', serif;
+  --font-body: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --size-display-xl: clamp(3.2rem, 3rem + 4vw, 7.5rem);
+  --size-display-lg: clamp(2.4rem, 2rem + 3vw, 5rem);
+  --size-display-md: clamp(1.8rem, 1.5rem + 1.6vw, 3rem);
+  --size-heading: clamp(1.4rem, 1.2rem + 0.8vw, 2rem);
+  --size-subheading: 1.15rem;
+  --size-body: 1rem;
+  --size-body-lg: 1.15rem;
+  --size-caption: 0.8rem;
+  --size-label: 0.72rem;
+  --size-nav: 0.85rem;
+
+  --leading-tight: 1.02;
+  --leading-snug: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.14em;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.5rem;
+  --space-10: 9rem;
+
+  /* Layout */
+  --container-max: 1440px;
+  --container-pad: clamp(1.25rem, 1rem + 2vw, 4rem);
+  --grid-gap: clamp(1rem, 0.75rem + 1vw, 2rem);
+
+  /* Borders / radii */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --border-thin: 1px solid var(--color-hairline);
+  --border-strong: 1px solid var(--color-hairline-strong);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 160ms;
+  --duration-base: 420ms;
+  --duration-slow: 800ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}

@@ -1,0 +1,13 @@
+.page-hero {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-7);
+}
+
+.page-hero__title {
+  max-width: 26ch;
+}
+
+.page-hero__sub {
+  margin-top: var(--space-5);
+  max-width: 56ch;
+}

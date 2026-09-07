@@ -1,0 +1,24 @@
+.case-study__block {
+  padding: var(--space-7) 0;
+  border-top: var(--border-thin);
+}
+
+.case-study__block:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.case-study__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-5);
+  padding: var(--space-6) 0;
+  border-top: var(--border-thin);
+  border-bottom: var(--border-thin);
+  margin-bottom: var(--space-7);
+}
+
+.case-study__meta-item span:first-child {
+  display: block;
+  margin-bottom: var(--space-2);
+}

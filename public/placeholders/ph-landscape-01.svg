@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <filter id="grain-11">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#211B15"/>
+  <line x1="167" y1="0" x2="167" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="333" y1="0" x2="333" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="500" y1="0" x2="500" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="667" y1="0" x2="667" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="833" y1="0" x2="833" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1000" y1="0" x2="1000" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1167" y1="0" x2="1167" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1333" y1="0" x2="1333" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1500" y1="0" x2="1500" y2="1000" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="167" y1="228" x2="582" y2="478" stroke="#E7DFD3" stroke-width="1.5" opacity="0.18"/>
+  <rect x="748" y="601" width="483" height="483" fill="#E7DFD3" opacity="0.11" transform="rotate(-2.2 990 843)"/>
+  <rect x="315" y="717" width="191" height="191" fill="#B2694A" opacity="0.06" transform="rotate(-7.4 411 812)"/>
+  <rect x="676" y="405" width="379" height="379" fill="#B2694A" opacity="0.10" transform="rotate(13.5 866 595)"/>
+  <line x1="100" y1="407" x2="553" y2="679" stroke="#8C9A7B" stroke-width="1.5" opacity="0.18"/>
+  <rect width="1600" height="1000" filter="url(#grain-11)"/>
+  <text x="50%" y="50%" font-family="Archivo, sans-serif" font-size="45" fill="#E7DFD3" fill-opacity="0.22" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">LANDSCAPE</text>
+</svg>

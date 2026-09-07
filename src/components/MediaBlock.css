@@ -1,0 +1,30 @@
+.media-block {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-raised);
+  width: 100%;
+}
+
+.media-block--landscape { aspect-ratio: 16 / 10; }
+.media-block--portrait { aspect-ratio: 4 / 5; }
+.media-block--square { aspect-ratio: 1 / 1; }
+.media-block--wide { aspect-ratio: 21 / 9; }
+.media-block--natural { aspect-ratio: auto; }
+
+.media-block img,
+.media-block video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.media-block--natural img,
+.media-block--natural video {
+  height: auto;
+  object-fit: contain;
+}
+
+.media-block__caption {
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="1000" height="1400">
+  <defs>
+    <filter id="grain-41">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="1400" fill="#191614"/>
+  <line x1="167" y1="0" x2="167" y2="1400" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="333" y1="0" x2="333" y2="1400" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="500" y1="0" x2="500" y2="1400" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="667" y1="0" x2="667" y2="1400" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="833" y1="0" x2="833" y2="1400" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="1000" y1="0" x2="1000" y2="1400" stroke="#3A332A" stroke-width="0.6" opacity="0.25"/>
+  <line x1="555" y1="862" x2="935" y2="1090" stroke="#E7DFD3" stroke-width="1.5" opacity="0.18"/>
+  <circle cx="127" cy="429" r="209" fill="#B2694A" opacity="0.09"/>
+  <rect x="580" y="231" width="318" height="318" fill="#8C9A7B" opacity="0.09" transform="rotate(11.5 739 390)"/>
+  <circle cx="341" cy="1073" r="285" fill="#8C9A7B" opacity="0.11"/>
+  <line x1="717" y1="1053" x2="1067" y2="1263" stroke="#E7DFD3" stroke-width="1.5" opacity="0.18"/>
+  <rect width="1000" height="1400" filter="url(#grain-41)"/>
+  <text x="50%" y="50%" font-family="Archivo, sans-serif" font-size="45" fill="#E7DFD3" fill-opacity="0.22" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">PORTRAIT</text>
+</svg>
