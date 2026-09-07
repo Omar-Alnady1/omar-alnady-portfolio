@@ -1,9 +1,6 @@
-// Core content types. UI components consume this shape only —
-// no component should hardcode project content.
-
+// Core content types. UI components consume this shape only.
 export type Industry = string;
 export type Discipline = string;
-
 export type MediaAspect = 'landscape' | 'portrait' | 'square' | 'wide';
 
 export interface MediaItem {
@@ -20,19 +17,17 @@ export interface VideoItem {
   caption?: string;
 }
 
-export interface StatItem {
-  value: string;
-  label: string;
+export interface ContentLink {
+  title: string;
+  platform: string;
+  type: string;
+  url: string;
+  thumbnail?: string;
 }
 
-export interface CreditItem {
-  role: string;
-  name: string;
-}
+export interface StatItem { value: string; label: string; }
+export interface CreditItem { role: string; name: string; }
 
-// A case study is built from an ordered list of typed blocks.
-// Unknown/omitted fields simply omit the corresponding block — no
-// component ever renders an empty heading or empty container.
 export type CaseStudyBlock =
   | { type: 'intro'; heading?: string; body: string }
   | { type: 'text'; heading?: string; body: string }
@@ -65,11 +60,9 @@ export interface Project {
   videos?: VideoItem[];
   sections?: CaseStudyBlock[];
   credits?: CreditItem[];
+  contentLinks?: ContentLink[];
   featured?: boolean;
   displayOrder?: number;
 }
 
-export interface NavItem {
-  label: string;
-  path: string;
-}
+export interface NavItem { label: string; path: string; }
