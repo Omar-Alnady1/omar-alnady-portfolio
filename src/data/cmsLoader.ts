@@ -1,10 +1,12 @@
 import type { Project } from './types';
 
-// Vite imports every JSON project created by the CMS at build time.
-const modules = import.meta.glob('/content/projects/*.json', {
+type ViteGlob = (pattern: string, options: { eager: boolean; import: string }) => Record<string, Project>;
+
+const glob = (import.meta as ImportMeta & { glob: ViteGlob }).glob;
+const modules = glob('/content/projects/*.json', {
   eager: true,
   import: 'default',
-}) as Record<string, Project>;
+});
 
 export const cmsProjects: Project[] = Object.values(modules).map((project) => ({
   ...project,
